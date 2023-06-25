@@ -86,7 +86,7 @@ export const AtmoScrubber = (props, context) => {
             </LabeledList.Item>     
         </LabeledList>
         </Section>
-        ):(<></>)}
+        ):("")}
         <Section title="Power Regulator Status">
           <LabeledList>
             <LabeledList.Item label="Volume Rate">
