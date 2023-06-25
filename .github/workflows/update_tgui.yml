@@ -23,6 +23,8 @@ jobs:
     - name: Restore Yarn cache
       uses: actions/cache@v3
       with:
+        path: tgui/.yarn/cache
+        key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-build-
           ${{ runner.os }}-
